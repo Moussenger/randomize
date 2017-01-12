@@ -1,1 +1,33 @@
 /* This file is for your main application css. */
+
+html, body {
+  height: 100%;
+  margin: 0%;
+  padding: 0%;
+}
+
+body {
+  font-family: 'Padauk', sans-serif;
+  font-size: 300px;
+  color: white;
+  overflow: hidden;
+}
+
+.base {
+  display: table;
+  background-color: #333333;
+  width: 100%;
+  height: 100%;
+}
+
+.base > .content {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+@media only screen and (max-device-width: 480px) {
+  body {
+    font-size: 150px;
+  }
+}
